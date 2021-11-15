@@ -9,6 +9,7 @@
   background-position: center center;
   background-repeat: no-repeat;
   opacity: 1;
+  background-clip: url('./preloader.gif');
   transition: 1s opacity;
 }
 .preloader.loaded {
