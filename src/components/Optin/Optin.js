@@ -5,11 +5,11 @@ const Optin = () => {
   return (
     <div>
       <div className="optin">
-        <p>Want to be the first to know when we launch?</p>
         <button style={{ margin: '0 5px' }}  >Login</button>
         <button style={{ margin: '0 5px' }} >Sign up</button>
+        <button style={{ margin: '0 5px' }} >Subscribe</button>
       </div>
-      <div className="mt-3">
+      <div className="mt-2">
         <div className="social-icons-container">
           <div className="social-icons">
             <ul style={{ margin: '0', padding: '0' }} class="d-flex ">

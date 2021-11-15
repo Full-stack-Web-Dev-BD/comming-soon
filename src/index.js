@@ -9,24 +9,31 @@ import "./styles.css";
 
 function App() {
   useEffect(() => {
-    document.querySelector('video').playbackRate = 2.0;
-    setTimeout(() => {
-      var video = document.getElementById('video')
-      video.addEventListener('ended', finishVideo())
-    }, 4000);
+    document.querySelector('video').playbackRate = 2.3;
+    var timerContent = document.getElementById("timer-content")
+    var video = document.getElementById('video')
+    timerContent.style.display = 'none'
+    video.addEventListener('play', function () {
+      console.log('video started ')
+      setTimeout(() => {
+        finishVideo()
+      }, 6000);
+    })
   }, [])
   const finishVideo = () => {
     var vc = document.getElementById('video-container')
+    var timerContent = document.getElementById("timer-content")
+    timerContent.style.display = 'block'
     vc.style.display = "none"
   }
   return (
     <div className="App">
       <div id="video-container" className="fullscreen-bg">
-        <video loop muted autoPlay poster="img/videoframe.jpg" id="video" className="fullscreen-bg__video">
+        <video loop muted autoPlay poster="img/videoframe.jpg" id="video" style={{ width: '100%' }} className="fullscreen-bg__video">
           <source src={video} type="video/mp4" />
         </video>
       </div>
-      <div className="container">
+      <div className="container " id="timer-content">
         <h1>Be the first to know what's next in</h1>
         <Timer />
         <Optin />
