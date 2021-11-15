@@ -1,6 +1,12 @@
 .optin {
   margin-top: 8%;
 }
+.social-icons-container{
+  text-align: center;
+}
+.social-icons{
+  display: inline-block;
+} 
 .optin p {
   font-size: 14px;
   font-weight: 100;
