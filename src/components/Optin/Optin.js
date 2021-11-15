@@ -6,7 +6,7 @@ const Optin = () => {
     <div>
       <div className="optin">
         <p>Want to be the first to know when we launch?</p>
-        <button style={{ margin: '0 5px' }} onClick={e => this.modal()} >Login</button>
+        <button style={{ margin: '0 5px' }}  >Login</button>
         <button style={{ margin: '0 5px' }} >Sign up</button>
       </div>
       <div className="mt-3">

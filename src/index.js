@@ -9,8 +9,7 @@ import "./styles.css";
 
 function App() {
   useEffect(() => {
-    finishVideo()
-    document.querySelector('video').playbackRate = 5.0;
+    document.querySelector('video').playbackRate = 2.0;
     setTimeout(() => {
       var video = document.getElementById('video')
       video.addEventListener('ended', finishVideo())
